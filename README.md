@@ -6,17 +6,15 @@ A web-based Java application designed to help apartment residents submit, track,
 
 ## 🚀 Features
 
-### 👥 Resident Module
-- 🔐 **Register / Login** securely
-- 📝 **Submit complaints** (water, electricity, security, etc.)
-- 🔄 **Update or cancel** submitted complaints
-- 📊 **Track status** (Pending / In Progress / Resolved)
-- 📜 **View complaint history**
+### 👤 Resident
+- Register and log in securely.
+- Submit new complaints with category & description.
+- View all submitted complaints and their status.
 
-### 🛠 Admin Module
-- 🔐 **Admin Login**
-- 📋 **View all complaints**
-- ✅ **Update complaint statuses**
+### 🛠️ Admin
+- View all complaints from residents.
+- Update complaint status (Pending, In Progress, Resolved).
+- Manage user complaints efficiently.
 
 ---
 
@@ -34,18 +32,16 @@ A web-based Java application designed to help apartment residents submit, track,
 
 ## 🗃️ Project Folder Structure
 
-GatedComplaintTracker/
+''GatedCommunityProject/
 │
-├── src/main/java/
+├── src/
 │   └── com/flm/
 │       ├── model/
 │       │   ├── User.java
 │       │   └── Complaint.java
-│       │
 │       ├── dao/
 │       │   ├── UserDao.java
 │       │   └── ComplaintDao.java
-│       │
 │       ├── servlet/
 │       │   ├── LoginServlet.java
 │       │   ├── LogoutServlet.java
@@ -53,31 +49,25 @@ GatedComplaintTracker/
 │       │   ├── AddComplaintServlet.java
 │       │   ├── ViewComplaintsServlet.java
 │       │   └── UpdateComplaintStatusServlet.java
-│       │
 │       └── utils/
 │           ├── DBConnection.java
 │           └── Constants.java
 │
-├── src/main/webapp/
-│   ├── index.html                  // Login page
-│   ├── register.html               // Registration page
-│   ├── adminDashboard.jsp          // Admin homepage
-│   ├── residentDashboard.jsp       // Resident homepage
-│   ├── addComplaint.jsp            // Form for residents to submit complaint
-│   ├── viewComplaints.jsp          // List complaints – shared for both roles
-│   ├── updateComplaintStatus.jsp   // Form for admin to change status
-│   └── WEB-INF/                     // Deployment descriptor
-|
-│        └── web.xml
-│                        │
-├── database/
-│   └── schema.sql                  // DB creation & table script
+├── WebContent/
+│   ├── index.html                  # Login Page
+│   ├── register.html               # Registration Page
+│   ├── adminDashboard.jsp          # Admin Home
+│   ├── residentDashboard.jsp       # Resident Home
+│   ├── addComplaint.jsp            # Complaint Submission
+│   ├── viewComplaints.jsp          # Complaint Listing
+│   ├── updateComplaintStatus.jsp   # Status Update
+│   ├── style.css                   # Styling
+│   │                  
+│   └── images/                     # images
 │
-├── lib/
-│   └── mysql-connector-java.jar    // JDBC driver
-│
-├── .gitignore
-└── README.md
+├── README.md
+└── .gitignore''
+
 
 ---
 
