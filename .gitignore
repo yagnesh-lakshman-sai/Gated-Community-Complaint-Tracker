@@ -1,0 +1,45 @@
+# Compiled Java class files
+*.class
+
+# Log files
+*.log
+
+# Tomcat / Jetty / Maven output
+/logs/
+/target/
+/out/
+/build/
+/dist/
+
+# Eclipse specific files
+.settings/
+.project
+.classpath
+
+# IntelliJ IDEA
+*.iml
+.idea/
+*.ipr
+*.iws
+
+# Mac / Windows system files
+.DS_Store
+Thumbs.db
+
+# Java web server temp files
+*.war
+*.ear
+
+# lib directory jars (optional if using dependency management)
+lib/
+
+# Secrets or DB credentials (optional)
+*.env
+*.properties
+db-config.json
+
+# Node modules (in case of frontend additions)
+node_modules/
+
+# VS Code settings
+.vscode/
