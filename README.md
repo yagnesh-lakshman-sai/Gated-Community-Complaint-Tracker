@@ -32,7 +32,7 @@ A web-based Java application designed to help apartment residents submit, track,
 
 ## 🗃️ Project Folder Structure
 
-''GatedCommunityProject/
+'''GatedCommunityProject/
 │
 ├── src/
 │   └── com/flm/
@@ -66,7 +66,7 @@ A web-based Java application designed to help apartment residents submit, track,
 │   └── images/                     # images
 │
 ├── README.md
-└── .gitignore''
+└── .gitignore'''
 
 
 ---
