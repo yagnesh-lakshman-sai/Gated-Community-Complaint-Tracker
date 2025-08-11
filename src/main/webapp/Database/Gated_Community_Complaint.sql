@@ -21,15 +21,13 @@ CREATE TABLE complaints (
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
-
-INSERT INTO users (name, email, flat_no, password, role) VALUES
-('Yagnesh Admin', 'yagnesh.admin@gated.com', NULL, 'Y@gne&h_2911', 'admin'),
-('Rahul Sharma', 'rahul.sharma@example.com', 'C-101', 'rahul123', 'resident'),
-('Priya Verma', 'priya.verma@example.com', 'D-202', 'priya123', 'resident');
-
+   INSERT INTO users (name, email, flat_no, password, role) VALUES
+('Admin User', 'admin@gated.com', NULL, 'admin123', 'admin'),
+('Ravi Kumar', 'ravi@example.com', 'A-101', 'ravi123', 'resident'),
+('Priya Sharma', 'priya@example.com', 'B-202', 'priya123', 'resident');
 
 
-INSERT INTO complaints (user_id, category, description, date, status) VALUES
-(2, 'Plumbing', 'Water leakage in kitchen sink', '2025-08-01', 'Pending'),
-(2, 'Security', 'Unauthorized visitor entry', '2025-08-05', 'In Progress'),
-(3, 'Electricity', 'Frequent power cuts in evening', '2025-08-07', 'Resolved');
+-- INSERT INTO complaints (user_id, category, description, date, status) VALUES
+-- (2, 'Plumbing', 'Water leakage in kitchen sink', '2025-08-01', 'Pending'),
+-- (2, 'Security', 'Unauthorized visitor entry', '2025-08-05', 'In Progress'),
+-- (3, 'Electricity', 'Frequent power cuts in evening', '2025-08-07', 'Resolved');
